@@ -30,6 +30,7 @@
 .card__home-title {
     display: flex;
     align-items: center;
+    
 
     img {
         height: 2rem;
@@ -39,11 +40,15 @@
     .title {
         font-size: 1.4rem;
         margin-top: .4rem;
+        text-decoration: none;
+        color: white;
     }
     
     .topic {
         font-size: 1rem;
         margin-top: .4rem;
+        text-decoration: none;
+        color: white;
     }
 
 }
@@ -52,7 +57,10 @@
 .card__home-name {
     display: flex;
     align-items: center;
-    border-radius: 2rem;
+    border-radius: 2rem;    
+    text-decoration: none;
+    color:white;
+
 
     .name {
         font-size: 1.3rem;

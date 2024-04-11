@@ -1,7 +1,9 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './Main.css'
 
 export const MainNavBar = () => {
+
+    const navigate = useNavigate()
 
     return (
         <div className="container__navbar">
@@ -14,13 +16,24 @@ export const MainNavBar = () => {
 
             <div className="container__navbar-buttons">
 
-                <Link to='/home' className='button__navbar button__navbar--home'>Home</Link>
+                <Link to='/home' className='button__navbar button__navbar--home'>
+                    <div>Home</div>
+                </Link>
 
                 <div className="button__navbar button__navbar--my-posts">My Post</div>
+
                 <div className="button__navbar button__navbar--favorites">Favorites</div>
+
                 <div className="button__navbar button__navbar--new-post">New Post</div>
+                
                 <div className="button__navbar button__navbar--profile">Profile</div>
-                <div className="button__navbar button__navbar--logout">Logout</div>
+
+                <Link to='' className="button__navbar button__navbar--logout" onClick={() => {
+                    localStorage.removeItem('learning_user')
+                    navigate('/', { replace: true })
+                }}>
+                    <div>Logout</div>
+                </Link>
             </div>
 
         </div>

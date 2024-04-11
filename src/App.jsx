@@ -1,36 +1,54 @@
 
 import './App.css'
-import { Routes, Route, Outlet,} from 'react-router-dom'
-import { HomePage } from "./components/main page/home/HomePage.jsx"
-import { MainNavBar } from "./components/main page/MainNavBar.jsx"
-import { useEffect, useState } from "react"
-import { getPosts } from "./services/homeServices.jsx"
-import { WelcomePage } from './components/main page/welcome/WelcomePage.jsx'
+import { Routes, Route,} from 'react-router-dom'
+
+import { Authorized } from './views/Authorized.jsx'
+import { ApplicationViews } from './views/ApplicationViews.jsx'
+import { Register } from './components/auth/Register.jsx'
+import { Login } from './components/auth/Login.jsx'
 
 export const App = () => {
 
-  const [allPosts, setAllPosts] = useState([])
+  // const [allPosts, setAllPosts] = useState([])
 
-  useEffect(() => { getPosts().then((res) => setAllPosts(res)) }, [])
+  // useEffect(() => { getPosts().then((res) => setAllPosts(res)) }, [])
+
 
   return (
     <Routes>
-      <Route path='/' element={
 
-        <div className="container__main">
-          <MainNavBar />
+      <Route path='/login' element={<Login />} />
+      <Route path='/register' element={<Register />} />
 
-          <div className="container__update-page">
-            <Outlet/>
-          </div>
+      <Route path='*' element={
+        //checks if user is authorized and returns application views accordingly.
+        //uses the 
+        <Authorized>
+          <ApplicationViews />
+        </Authorized>
+      } />
 
-        </div>
-      }>
-        <Route index element={<WelcomePage/>}/>
-        <Route path='home' element={<HomePage allPosts={allPosts} />} />
-      </Route>
     </Routes>
   )
+
+  // return (
+  //   <Routes>
+  //     <Route path='/' element={
+
+  //       <div className="container__main">
+  //         <MainNavBar />
+
+  //         <div className="container__update-page">
+  //           <Outlet/>
+  //         </div>
+
+  //       </div>
+  //     }>
+  //       <Route index element={<WelcomePage/>}/>
+  //       <Route path='home' element={<HomePage allPosts={allPosts} />} />
+  //     </Route>
+  //   </Routes>
+  // )
 }
 
 
