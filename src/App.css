@@ -1,0 +1,16 @@
+html {
+    color-scheme: dark;
+    min-width: 763px;
+    height: 100%;
+
+    body {
+
+        background-image: url('https://pixelcovestudio.files.wordpress.com/2023/08/library.gif?w=1024');
+        background-attachment: fixed;
+        background-size: cover;
+        color-scheme: dark;
+        margin:0;
+        height: 100%;
+    }
+
+}
