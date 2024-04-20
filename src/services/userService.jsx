@@ -17,3 +17,11 @@ export const createUser = (user) => {
 export const readUserById = (userId) => {
   return fetch(`http://localhost:8088/users/${userId}`).then((res) => res.json())
 }
+
+export const updateUser = (updateObject) => {
+  return fetch(`http://localhost:8088/users/${updateObject.id}`,{
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(updateObject)
+  })
+}

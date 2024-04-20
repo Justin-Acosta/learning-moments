@@ -1,0 +1,374 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Merlin the Wise",
+      "email": "nosetonose@example",
+      "image": "https://cdn.lospec.com/thumbnails/gallery/excalibur/flying-witch-default.png",
+      "cohort": 70
+    },
+    {
+      "id": 2,
+      "name": "Gandalf the White",
+      "email": "cloudsoffear@example.com",
+      "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c47316eb-0f08-4d79-a42a-6897e1c796f7/deil5de-3869fe99-7310-42da-8726-2a6ce3787943.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M0NzMxNmViLTBmMDgtNGQ3OS1hNDJhLTY4OTdlMWM3OTZmN1wvZGVpbDVkZS0zODY5ZmU5OS03MzEwLTQyZGEtODcyNi0yYTZjZTM3ODc5NDMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7WhU2rUqup7nRpJREqm1ffViGK4jN_KNISBcxj5r1YA",
+      "cohort": 69
+    },
+    {
+      "id": 3,
+      "name": "Luna Starweaver",
+      "email": "needleboss@example.com",
+      "image": "https://media.theresanaiforthat.com/icons/pixel-art-wizard-1703261186.png",
+      "cohort": 68
+    },
+    {
+      "id": 4,
+      "name": "Morgana Fireheart ",
+      "email": "jointchief@example.com",
+      "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/931d1607-6e00-4070-b707-29c9aea6a020/dg0a661-d556f228-4a5d-4b12-87a2-ea07acb84cea.gif/v1/fill/w_256,h_256,q_85,strp/shadow_wizard_money_gang_by_vroska_dg0a661-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjU2IiwicGF0aCI6IlwvZlwvOTMxZDE2MDctNmUwMC00MDcwLWI3MDctMjljOWFlYTZhMDIwXC9kZzBhNjYxLWQ1NTZmMjI4LTRhNWQtNGIxMi04N2EyLWVhMDdhY2I4NGNlYS5naWYiLCJ3aWR0aCI6Ijw9MjU2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.EhZno-xLLbFM8kmOfrZVzfOa3IOgruzHqECeaSs8BAs",
+      "cohort": 70
+    },
+    {
+      "id": 5,
+      "name": "Zephyr Frostwind",
+      "email": "pillpopper@example.com",
+      "image": "https://i.pinimg.com/originals/06/46/db/0646db1871d2a2e2063048bce34b5f7e.png",
+      "cohort": 69
+    },
+    {
+      "id": 6,
+      "name": "Thaddeus Nightshade",
+      "email": "betonblack@example.com",
+      "image": "https://cdn.lospec.com/avatar/batuhan-yazici.png",
+      "cohort": 68
+    },
+    {
+      "id": 7,
+      "name": "Isadora Moonbeam",
+      "email": "shineonme@example.com",
+      "image": "https://thumbs.dreamstime.com/b/pixel-art-retro-design-fantasy-game-character-bearded-wizard-hat-magic-staff-pixel-art-retro-design-fantasy-game-227417763.jpg",
+      "cohort": 70
+    },
+    {
+      "id": 8,
+      "name": "Oberon Stardust",
+      "email": "underthewire@example.com",
+      "image": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd0cbce2-1b69-4e15-b244-f9c896a70217_256x256.png",
+      "cohort": 70
+    },
+    {
+      "id": 9,
+      "name": "Aurora Celestia",
+      "email": "breakingbad@example.com",
+      "image": "https://cdn.lospec.com/thumbnails/gallery/ruchary/ol-gnome-default.png",
+      "cohort": 69
+    },
+    {
+      "id": 10,
+      "name": "Xander Arcanum",
+      "email": "cashcleaner@example.com",
+      "image": "https://static.wikia.nocookie.net/wizardoflegend_gamepedia_en/images/1/17/Grit.png",
+      "cohort": 68
+    }
+  ],
+  "posts": [
+    {
+      "id": 3,
+      "topicId": 2,
+      "userId": 4,
+      "title": "Practicing Mindfulness for Stress Reduction",
+      "body": "Mindfulness techniques, such as meditation and deep breathing exercises, can help reduce stress levels by promoting relaxation and present-moment awareness.",
+      "date": "4/4/2024"
+    },
+    {
+      "id": 4,
+      "topicId": 3,
+      "userId": 5,
+      "title": "The Benefits of Regular Exercise",
+      "body": "Engaging in regular exercise not only improves physical fitness but also enhances mood, reduces stress, and promotes overall well-being.",
+      "date": "4/4/2024"
+    },
+    {
+      "id": 5,
+      "topicId": 4,
+      "userId": 6,
+      "title": "Breaking the Stigma: Mental Health Awareness",
+      "body": "It's crucial to raise awareness about mental health issues and break the stigma surrounding them. Everyone deserves access to support and treatment for their mental well-being.",
+      "date": "4/4/2024"
+    },
+    {
+      "id": 6,
+      "topicId": 5,
+      "userId": 7,
+      "title": "Eating Well for Optimal Health",
+      "body": "Nutrition plays a vital role in overall health and well-being. Consuming a balanced diet rich in fruits, vegetables, lean proteins, and whole grains is key to maintaining optimal health.",
+      "date": "4/4/2024"
+    },
+    {
+      "id": 7,
+      "topicId": 6,
+      "userId": 8,
+      "title": "Establishing Healthy Sleep Habits",
+      "body": "Good sleep hygiene is essential for physical and mental health. Establishing a regular sleep schedule, creating a restful environment, and practicing relaxation techniques can improve sleep quality.",
+      "date": "4/4/2024"
+    },
+    {
+      "id": 8,
+      "topicId": 7,
+      "userId": 9,
+      "title": "Coping Strategies for Managing Stress",
+      "body": "Learning effective coping strategies can help individuals better manage stress in their daily lives. Techniques such as deep breathing, exercise, and mindfulness can promote resilience.",
+      "date": "4/4/2024"
+    },
+    {
+      "id": 9,
+      "topicId": 8,
+      "userId": 10,
+      "title": "The Importance of Social Connection",
+      "body": "Maintaining meaningful social connections is essential for emotional well-being. Spending time with friends, family, and supportive communities can provide comfort and belonging.",
+      "date": "4/4/2024"
+    },
+    {
+      "id": 10,
+      "topicId": 9,
+      "userId": 1,
+      "title": "Effective Time Management Techniques",
+      "body": "Practicing good time management allows individuals to prioritize tasks, increase productivity, and reduce stress. Strategies such as setting goals, creating schedules, and minimizing distractions can help improve time management skills.",
+      "date": "4/4/2024"
+    },
+    {
+      "id": 11,
+      "topicId": 10,
+      "userId": 2,
+      "title": "Creativity in Death",
+      "body": "Creativity enhances problem-solving skills, promotes innovation, and fosters personal growth. Engaging in creative activities such as art, music, or writing can inspire new ideas and perspectives.",
+      "date": "4/4/2024"
+    },
+    {
+      "id": 12,
+      "topicId": 1,
+      "userId": 3,
+      "title": "Self-Care Practices for Busy Professionals",
+      "body": "Busy professionals often neglect self-care, but it's crucial for maintaining balance and preventing burnout. Simple self-care practices like taking breaks, staying hydrated, and prioritizing sleep can make a significant difference.",
+      "date": "4/4/2024"
+    },
+    {
+      "id": 13,
+      "topicId": 2,
+      "userId": 4,
+      "title": "Mindfulness Meditation for Inner Peace",
+      "body": "Mindfulness meditation cultivates inner peace and emotional resilience by training the mind to focus on the present moment. Regular practice can reduce anxiety, improve concentration, and enhance overall well-being.",
+      "date": "4/4/2024"
+    },
+    {
+      "id": 14,
+      "topicId": 3,
+      "userId": 5,
+      "title": "Incorporating Exercise into Daily Life",
+      "body": "Finding ways to incorporate exercise into daily life, such as taking the stairs instead of the elevator or going for a walk during lunch breaks, can help increase physical activity levels and improve health outcomes.",
+      "date": "4/4/2024"
+    },
+    {
+      "id": 15,
+      "topicId": 4,
+      "userId": 6,
+      "title": "Promoting Mental Wellness in the Workplace",
+      "body": "Creating a supportive work environment that prioritizes mental wellness can improve employee morale, productivity, and retention. Employers can offer resources such as counseling services, flexible work arrangements, and mental health training.",
+      "date": "4/4/2024"
+    },
+    {
+      "id": 16,
+      "topicId": 5,
+      "userId": 7,
+      "title": "The Role of Nutrition in Disease Prevention",
+      "body": "A nutritious diet can help prevent various diseases, including heart disease, diabetes, and certain cancers. Eating a variety of nutrient-rich foods and maintaining a healthy weight are key components of disease prevention.",
+      "date": "4/4/2024"
+    },
+    {
+      "id": 17,
+      "topicId": 6,
+      "userId": 8,
+      "title": "Tips for Better Sleep",
+      "body": "Improving sleep quality can have a profound impact on overall health and well-being. Tips for better sleep include establishing a relaxing bedtime routine, limiting caffeine and screen time before bed, and creating a comfortable sleep environment.",
+      "date": "4/4/2024"
+    },
+    {
+      "id": 18,
+      "topicId": 7,
+      "userId": 9,
+      "title": "Stress Reduction Techniques for Students",
+      "body": "Students often face high levels of stress due to academic pressures and other responsibilities. Learning effective stress reduction techniques, such as time management, relaxation exercises, and seeking support, can help students manage stress and improve their overall well-being.",
+      "date": "4/4/2024"
+    },
+    {
+      "id": 19,
+      "topicId": 8,
+      "userId": 10,
+      "title": "Building Strong Relationships",
+      "body": "Strong relationships contribute to overall happiness and well-being. Investing time and effort into building and maintaining meaningful connections with others can provide support, encouragement, and a sense of belonging.",
+      "date": "4/4/2024"
+    },
+    {
+      "id": 20,
+      "topicId": 9,
+      "userId": 1,
+      "title": "Effective Goal Setting Strategies",
+      "body": "Setting clear and achievable goals is essential for personal and professional growth. Effective goal-setting strategies include setting SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound), creating action plans, and regularly reviewing progress.",
+      "date": "4/4/2024"
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "name": "Self Care",
+      "description": "The practice of taking action to preserve or improve one's own health."
+    },
+    {
+      "id": 2,
+      "name": "Mindfulness",
+      "description": "The psychological process of bringing one's attention to the internal and external experiences occurring in the present moment."
+    },
+    {
+      "id": 3,
+      "name": "Physical Exercise",
+      "description": "Any bodily activity that enhances or maintains physical fitness and overall health and wellness."
+    },
+    {
+      "id": 4,
+      "name": "Mental Health",
+      "description": "A state of well-being in which an individual realizes their own abilities, can cope with the normal stresses of life, can work productively, and is able to make a contribution to their community."
+    },
+    {
+      "id": 5,
+      "name": "Nutrition",
+      "description": "The process of providing or obtaining the food necessary for health and growth."
+    },
+    {
+      "id": 6,
+      "name": "Sleep Hygiene",
+      "description": "A variety of different practices and habits that are necessary to have good nighttime sleep quality and full daytime alertness."
+    },
+    {
+      "id": 7,
+      "name": "Stress Management",
+      "description": "Techniques and psychotherapies aimed at controlling a person's levels of stress, especially chronic stress, usually for the purpose of and for the motive of improving everyday functioning."
+    },
+    {
+      "id": 8,
+      "name": "Social Connection",
+      "description": "The experience of feeling close and connected to others."
+    },
+    {
+      "id": 9,
+      "name": "Time Management",
+      "description": "The process of planning and exercising conscious control of time spent on specific activities, especially to increase effectiveness, efficiency, and productivity."
+    },
+    {
+      "id": 10,
+      "name": "Creativity",
+      "description": "The use of imagination or original ideas to create something."
+    }
+  ],
+  "userLikes": [
+    {
+      "id": 1,
+      "userId": 5,
+      "postId": 6
+    },
+    {
+      "id": 3,
+      "userId": 4,
+      "postId": 10
+    },
+    {
+      "id": 5,
+      "userId": 6,
+      "postId": 7
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "postId": 11
+    },
+    {
+      "id": 7,
+      "userId": 9,
+      "postId": 8
+    },
+    {
+      "id": 8,
+      "userId": 10,
+      "postId": 9
+    },
+    {
+      "id": 9,
+      "userId": 7,
+      "postId": 14
+    },
+    {
+      "id": 10,
+      "userId": 8,
+      "postId": 17
+    },
+    {
+      "id": 11,
+      "userId": 5,
+      "postId": 16
+    },
+    {
+      "id": 13,
+      "userId": 4,
+      "postId": 12
+    },
+    {
+      "id": 15,
+      "userId": 6,
+      "postId": 19
+    },
+    {
+      "id": 16,
+      "userId": 1,
+      "postId": 18
+    },
+    {
+      "id": 17,
+      "userId": 9,
+      "postId": 5
+    },
+    {
+      "id": 18,
+      "userId": 10,
+      "postId": 4
+    },
+    {
+      "userId": 3,
+      "postId": 3,
+      "id": 20
+    },
+    {
+      "userId": 2,
+      "postId": 7,
+      "id": 24
+    },
+    {
+      "userId": 2,
+      "postId": 3,
+      "id": 26
+    },
+    {
+      "userId": 2,
+      "postId": 6,
+      "id": 27
+    },
+    {
+      "userId": 2,
+      "postId": 8,
+      "id": 28
+    },
+    {
+      "userId": 2,
+      "postId": 9,
+      "id": 29
+    }
+  ]
+}

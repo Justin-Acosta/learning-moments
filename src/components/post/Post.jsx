@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom"
+import { LikeButton } from "../like button/LikeButton.jsx"
+import { EditButton } from "../edit button/EditButton.jsx"
+import './Post.css'
+import { DeleteButton } from "../delete button/DeleteButton.jsx"
 
 
-export const HomePosts = ({ displayedPosts }) => {
+export const Post = ({ post, currentUser, setAllPosts }) => {
 
     //---Use Params---
 
@@ -11,32 +15,21 @@ export const HomePosts = ({ displayedPosts }) => {
 
     //---Functions---
 
-    const likesCounter = (post) => {
-        if (post.userLikes.length > 0) {
-            return post.userLikes.length
-
-        } else {
-            return 0
-        }
-    }
-
     //---HTML---
 
     return (
-        <div className="container__home-posts">
-
-            {displayedPosts.map(post => (
                 <section className="card__home-posts" key={post.id}>
 
                     <div className="card__home-name">
                         <img src={post.user.image} alt="" />
                         <div className="name">{post.user.name}</div>
+                        <EditButton currentUser={currentUser} postId={post.id}/>
+                        <DeleteButton currentUser={currentUser} postId={post.id} setAllPosts={setAllPosts}/>
                     </div>
 
                     <div className="card__home-title">
                         <img className='container__navbar-header--img' src="https://i.pinimg.com/originals/d4/95/46/d49546b1b2e76cf604c009a84b47d259.gif" alt="" />
                         <div>
-
                             <div className="title">
                                 <Link to={`/home/${post.id}`} className="title">{post.title}</Link>
                             </div>
@@ -47,15 +40,11 @@ export const HomePosts = ({ displayedPosts }) => {
                         </div>
                     </div>
 
-
-
                     <p>{post.body}</p>
-                    <div className="container__likes">
-                        <button>Like Post</button>
-                        <div>{likesCounter(post)} Likes</div>
-                    </div>
+
+                        <LikeButton currentUser={currentUser} postId={post.id} setAllPosts={setAllPosts}/>
+
                 </section>
-            ))}
-        </div>
+
     )
 }

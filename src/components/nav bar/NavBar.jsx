@@ -1,7 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom'
-import './Main.css'
+import './NavBar.css'
 
-export const MainNavBar = () => {
+export const NavBar = () => {
 
     const navigate = useNavigate()
 
@@ -20,13 +20,21 @@ export const MainNavBar = () => {
                     <div>Home</div>
                 </Link>
 
-                <div className="button__navbar button__navbar--my-posts">My Post</div>
+                <Link to='/my-posts' className='button__navbar button__navbar--my-posts'>
+                    <div>My Posts</div>
+                </Link>
 
-                <div className="button__navbar button__navbar--favorites">Favorites</div>
+                <Link to='/favorites' className='button__navbar button__navbar--new-favorites'>
+                    <div>Favorites</div>
+                </Link>
 
-                <div className="button__navbar button__navbar--new-post">New Post</div>
-                
-                <div className="button__navbar button__navbar--profile">Profile</div>
+                <Link to='/new-post' className='button__navbar button__navbar--new-post'>
+                    <div>New Post</div>
+                </Link>
+
+                <Link to='/edit-profile' className='button__navbar button__navbar--new-post'>
+                    <div>Profile</div>
+                </Link>
 
                 <Link to='' className="button__navbar button__navbar--logout" onClick={() => {
                     localStorage.removeItem('learning_user')

@@ -1,31 +1,26 @@
 import { useEffect, useState } from 'react'
 import './FilterBar.css'
-import { getTopics } from '../../services/filterBarServices.jsx'
 
-export const FilterBar = ({ allPosts, setDisplayedPosts }) => {
+export const FilterBar = ({ filterPosts, setDisplayedPosts, topics }) => {
 
-    const [topics, setTopics] = useState([])
-    const [topicSelect, setTopicSelect] = useState('')
+    //---useState---
+
+    const [topicSelect, setTopicSelect] = useState(0)
     const [searchInput, setSearchInput] = useState('')
 
 
     //---useEffects---
 
     useEffect(() => {
-        getTopics().then((res) => setTopics(res))
-    }, [])
-   
-
-    useEffect(() => {
 
         let filterArray = []
 
         if (parseInt(topicSelect) > 0) {
-            const tempArray = allPosts.filter((post) => post.topic.id === parseInt(topicSelect))
-            filterArray = tempArray
+            const tempArray = filterPosts.filter((post) => post.topic.id === parseInt(topicSelect))
+            setDisplayedPosts(tempArray)
 
         } else {
-            filterArray = allPosts
+            filterArray = filterPosts
         }
 
         if (searchInput !== '') {
@@ -36,7 +31,7 @@ export const FilterBar = ({ allPosts, setDisplayedPosts }) => {
             filterArray = tempArray
         }
         setDisplayedPosts(filterArray)
-    }, [topicSelect, searchInput])
+    }, [filterPosts,topicSelect, searchInput])
 
 
     return (
