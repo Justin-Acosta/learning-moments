@@ -30,38 +30,4 @@ export const App = () => {
 
     </Routes>
   )
-
-  // return (
-  //   <Routes>
-  //     <Route path='/' element={
-
-  //       <div className="container__main">
-  //         <MainNavBar />
-
-  //         <div className="container__update-page">
-  //           <Outlet/>
-  //         </div>
-
-  //       </div>
-  //     }>
-  //       <Route index element={<WelcomePage/>}/>
-  //       <Route path='home' element={<HomePage allPosts={allPosts} />} />
-  //     </Route>
-  //   </Routes>
-  // )
 }
-
-
-
-
-
-
-
-
-
-// <div className="container__main">
-//     <MainNavBar/>
-//     <div className="container__update-page">
-//         <HomePage allPosts={allPosts}/>
-//     </div>
-// </div>

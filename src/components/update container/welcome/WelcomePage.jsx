@@ -1,12 +1,19 @@
+import { useEffect } from 'react'
 import './WelcomePage.css'
+import { readUserById } from '../../../services/userService.jsx'
 
-export const WelcomePage = ({currentUser}) => {
+export const WelcomePage = ({currentUser,setCurrentUser}) => {
 
     //---Use Params---
     
     //---Use States---
 
     //---Use Effects---
+
+    useEffect(() => {
+        const learningUser = JSON.parse(localStorage.getItem('learning_user'))
+        readUserById(learningUser.id).then((res) => setCurrentUser(res))
+    }, [])
  
     //---Functions---
 
@@ -19,7 +26,7 @@ export const WelcomePage = ({currentUser}) => {
                 <img src="https://i.pinimg.com/originals/ec/45/80/ec4580d525dfafcd8c22a5a8f4d26033.png" alt="" />
                 <div>
                     <div className="title">{`Welcome ${currentUser.name}`}</div>
-                    <p className='paragraph'>Grab a torch, unroll a friend's scroll, and read some tips about learning to help you on your adventure.</p>
+                    <p className='paragraph'>Grab a torch, unroll a friend's scroll, and unlock the deep wells of magic within yourself.</p>
                 </div>
             </section>
         </div>
