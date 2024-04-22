@@ -45,6 +45,5 @@ export const Post = ({ post, currentUser, setAllPosts }) => {
                         <LikeButton currentUser={currentUser} postId={post.id} setAllPosts={setAllPosts}/>
 
                 </section>
-
     )
 }

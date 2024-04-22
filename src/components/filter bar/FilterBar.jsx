@@ -17,7 +17,7 @@ export const FilterBar = ({ filterPosts, setDisplayedPosts, topics }) => {
 
         if (parseInt(topicSelect) > 0) {
             const tempArray = filterPosts.filter((post) => post.topic.id === parseInt(topicSelect))
-            setDisplayedPosts(tempArray)
+            filterArray = tempArray
 
         } else {
             filterArray = filterPosts
